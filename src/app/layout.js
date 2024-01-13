@@ -4,6 +4,8 @@ import Providers from "./providers";
 import NextTopLoader from "nextjs-toploader";
 import Footer from "@/com/Footer";
 import Miniheader from "@/com/Miniheader";
+// import ReduxProvider from "@/provider/redux/reduxprovider";
+
 
 export const metadata = {
   title: "portfolio",
@@ -15,11 +17,12 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <Providers>
+        <script src="https://cdn.tailwindcss.com"></script>
           <NextTopLoader
             color="#5b21b6"
             initialPosition={0.18}
             crawlSpeed={500}
-            height={3}
+            height={4}
             crawl={true}
             showSpinner={true}
             easing="ease"
