@@ -15,7 +15,7 @@ export default function Miniheader() {
       <Box display="flex" ml="auto" alignItems="center" justifyContent="center" h="30px">
       <Button colorScheme='white' variant="outline" mr="5" size="sm"><DarkModeSwitch /></Button>
         <Text fontSize="md" mr="5"><Link href={'/'}>Home</Link></Text>
-        <Text fontSize="md" mr="5"><Link href={'/about'}>about</Link></Text>
+        <Text fontSize="md" mr="5"><Link href={'/about'}>About</Link></Text>
         <Text fontSize="md" mr="5"><Link href={'/exp'}>experience</Link></Text>
         {/* <Text fontSize="md" mr="5">Terms</Text> */}
       </Box>
