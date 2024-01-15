@@ -15,6 +15,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <Providers>
+    <script src="https://cdn.tailwindcss.com"></script>
           <NextTopLoader
             color="#5b21b6"
             initialPosition={0.18}
