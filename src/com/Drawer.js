@@ -11,6 +11,7 @@ import {
   import { useDisclosure } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import React from 'react'
+import Link from 'next/link'
 
 export function DrawerExample() {
     const { isOpen, onOpen, onClose } = useDisclosure()
@@ -33,14 +34,14 @@ export function DrawerExample() {
             <DrawerHeader>Create your account</DrawerHeader>
   
             <DrawerBody>
-              vikram
+             <Link href={'contact'}>contact</Link>
             </DrawerBody>
   
             <DrawerFooter>
               <Button variant='outline' mr={3} onClick={onClose}>
                 Cancel
               </Button>
-              <Button colorScheme='blue'>Save</Button>
+              {/* <Button colorScheme='blue'>Save</Button> */}
             </DrawerFooter>
           </DrawerContent>
         </Drawer>
