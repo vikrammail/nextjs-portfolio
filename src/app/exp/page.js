@@ -1,42 +1,64 @@
-"use client"
-import { Box, Heading, Text, VStack } from '@chakra-ui/react';
+import React from "react";
+import {  Box, Heading, Text, Badge } from "@chakra-ui/react";
 
-const Experience = () => {
+const OwnProjectsExperience = () => {
   return (
-    <Box p="8">
-      <Heading as="h2" mb="6" fontSize="2xl" mt={100}>
-        Experience
-      </Heading>
+    <>
+      <Box maxW="800px" mx="auto" mt={10} p={5}>
+        <Heading as="h2" size="xl" mb={4}>
+          Personal MERN Projects
+        </Heading>
 
-      <VStack align="start" spacing="4">
-        <Box>
-          <Heading as="h3" fontSize="xl" mb="2">
-            Senior Full Stack Developer - Awesome Tech Solutions
+        <Box mb={4}>
+          <Heading as="h3" size="lg">
+            E-commerce Platform - MyShop
           </Heading>
-          <Text color="gray.500">May 2020 - Present</Text>
-          <Text>
-            As a Senior Full Stack Developer at Awesome Tech Solutions, I lead a dynamic team of developers in designing and implementing innovative web applications. My responsibilities include collaborating with cross-functional teams, interpreting project requirements, and delivering high-quality solutions that exceed client expectations.
+          <Text fontSize="md" color="gray.600" mb={2}>
+             Present
           </Text>
-          <Text>
-            Utilizing Chakra UI for front-end development, I've been instrumental in crafting visually appealing and user-friendly interfaces. My expertise extends to building scalable and efficient backend systems using Node.js, Express, and various databases, ensuring optimal performance and a seamless user experience.
+          <Text fontSize="md">
+            MyShop is a full-fledged e-commerce platform that I developed to showcase my skills and explore the end-to-end process of building a MERN application. Key contributions and features include:
           </Text>
+          <Box ml={4} mt={2}>
+            <Text>- Implemented user authentication and authorization using JWT.</Text>
+            <Text>- Integrated a responsive and dynamic product catalog using React.js.</Text>
+            <Text>- Developed a RESTful API with Node.js and Express.js for handling product data.</Text>
+            <Text>- Integrated MongoDB for efficient storage and retrieval of product information.</Text>
+            <Text>- Implemented cart functionality and secure checkout processes.</Text>
+          </Box>
+          <Box mt={2}>
+            <Text fontSize="md" color="gray.600">
+              Technologies used: React.js, Node.js, Express.js, MongoDB, JWT, etc.
+            </Text>
+          </Box>
         </Box>
 
-        <Box>
-          <Heading as="h3" fontSize="xl" mb="2">
-            Full Stack Developer - Creative Web Solutions
+        <Box mb={4}>
+          <Heading as="h3" size="lg">
+            Task Management App - Taskify
           </Heading>
-          <Text color="gray.500">June 2017 - April 2020</Text>
-          <Text>
-            In my role as a Full Stack Developer at Creative Web Solutions, I contributed to the development of several successful projects. I actively participated in the entire software development lifecycle, from conceptualization and design to implementation and deployment.
+          <Text fontSize="md" color="gray.600" mb={2}>
+            January 2020 - May 2021
           </Text>
-          <Text>
-            Working with Chakra UI, React, and other modern frontend technologies, I delivered responsive and intuitive user interfaces. On the backend, I leveraged my skills in Node.js and Express to build robust server-side logic, and managed databases using MongoDB and SQL.
+          <Text fontSize="md">
+            Taskify is a project management tool that I developed to streamline personal and team tasks. Some highlights of my work on Taskify include:
           </Text>
+          <Box ml={4} mt={2}>
+            <Text>- Designed and implemented an intuitive task dashboard using React.js.</Text>
+            <Text>- Developed a RESTful API with Node.js and Express.js for task management.</Text>
+            <Text>- Integrated MongoDB to store and retrieve task data efficiently.</Text>
+            <Text>- Implemented user authentication to secure task data and user profiles.</Text>
+            <Text>- Added real-time updates using WebSocket for collaborative task management.</Text>
+          </Box>
+          <Box mt={2}>
+            <Text fontSize="md" color="gray.600">
+              Technologies used: React.js, Node.js, Express.js, MongoDB,  etc.
+            </Text>
+          </Box>
         </Box>
-      </VStack>
-    </Box>
+      </Box>
+    </>
   );
 };
 
-export default Experience;
+export default OwnProjectsExperience;
